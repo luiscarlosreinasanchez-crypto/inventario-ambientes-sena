@@ -40,9 +40,7 @@ Verifique: `dig +short inventario.luiscarlosreina.com` debe devolver la IP del V
 
 ## 4. Instalar la aplicación
 
-El repositorio es **privado**. Para clonarlo en el servidor use una de estas opciones:
-- **Deploy key (recomendada):** `ssh-keygen -t ed25519 -f /root/.ssh/inventario_deploy -N ""`, agregue la clave pública en GitHub → repositorio → Settings → Deploy keys (solo lectura) y clone con `GIT_SSH_COMMAND="ssh -i /root/.ssh/inventario_deploy" git clone git@github.com:luiscarlosreinasanchez-crypto/inventario-ambientes-sena.git`.
-- **Token personal (fine-grained, solo lectura de este repositorio):** clone por HTTPS y use el token como contraseña.
+El repositorio es **público**: se clona sin credenciales.
 
 ```bash
 cd /root
