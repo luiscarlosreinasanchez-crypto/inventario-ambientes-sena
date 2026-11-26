@@ -1,0 +1,22 @@
+[Unit]
+Description=Inventario de ambientes SENA (firmas de instructores)
+After=network.target
+
+[Service]
+Type=simple
+User=inventario
+Group=inventario
+WorkingDirectory=/opt/inventario-sena/app
+EnvironmentFile=/opt/inventario-sena/app/.env
+ExecStart=/opt/inventario-sena/node/bin/node --disable-warning=ExperimentalWarning src/server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/inventario-sena
+PrivateTmp=true
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target

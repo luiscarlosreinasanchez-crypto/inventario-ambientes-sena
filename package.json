@@ -1,0 +1,26 @@
+{
+  "name": "inventario-ambientes-sena",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firmas de inventario diario de ambientes de formación - SENA",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "3.0.3",
+    "cookie-session": "2.1.1",
+    "exceljs": "4.4.0",
+    "express": "5.1.0",
+    "multer": "2.5.0",
+    "pdfkit": "0.17.2",
+    "qrcode": "1.5.4"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
+  }
+}
